@@ -135,7 +135,7 @@ class Chat(App):
     CSS_PATH = "css/style.css"
 
     BINDINGS = [
-        ("crtl+q", "quit", "close"),
+        ("ctrl+q", "quit", "close"),
     ]
 
     def __init__(self, debug, *args, **kwargs):

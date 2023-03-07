@@ -101,8 +101,7 @@ class GPTConversation(_Conversation):
         super().__init__()
         with open(HERE.parent / "secrets.yaml") as f:
             secrets = yaml.safe_load(f)
-
-        openai.organization = secrets["organization"]
+        # openai.organization = secrets["organization"]
         openai.api_key = secrets["api_key"]
 
     async def _send(self, msg: Message):
